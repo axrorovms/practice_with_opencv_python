@@ -30,5 +30,5 @@ def upload_name(instance, filename):
 
 class User(models.Model):
     username = models.CharField(max_length=100)
-    password = models.CharField(max_length=100)
     face_image = models.ImageField(upload_to=upload_name)
+    face_video = models.FileField(upload_to=upload_name)
